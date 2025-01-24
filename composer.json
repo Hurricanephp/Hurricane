@@ -5,7 +5,8 @@
     "keywords": ["hurricane","framework","Asynchronous","async"],
     "require": {
         "react/react": "^1.4",
-        "vlucas/phpdotenv": "^5.6"
+        "vlucas/phpdotenv": "^5.6",
+        "laravel/pint": "^1.20"
     },
     "require-dev": {
         "phpstan/phpstan": "^2.1",
@@ -16,7 +17,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "App\\Hurricane\\": "src/"
+            "App\\Hurricane\\": "app/"
         }
     },
     "autoload-dev": {
@@ -32,8 +33,9 @@
     ],
     "scripts": {
         "pest": "vendor/bin/pest",
-        "phpstan": "vendor/bin/phpstan analyse src tests",
-        "rector": "vendor/bin/rector process --dry-run"
+        "phpstan": "vendor/bin/phpstan",
+        "rector": "vendor/bin/rector process --dry-run",
+        "lint": "vendor/bin/pint"
     },
     "config": {
         "optimize-autoloader": true,
