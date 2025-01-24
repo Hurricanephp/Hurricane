@@ -5,14 +5,14 @@
     "keywords": ["hurricane","framework","Asynchronous","async"],
     "require": {
         "react/react": "^1.4",
-        "vlucas/phpdotenv": "^5.6",
-        "laravel/pint": "^1.20"
+        "vlucas/phpdotenv": "^5.6"
     },
     "require-dev": {
         "phpstan/phpstan": "^2.1",
         "pestphp/pest": "^3.7",
         "rector/rector": "^2.0",
-        "symfony/var-dumper": "^7.2"
+        "symfony/var-dumper": "^7.2",
+        "laravel/pint": "^1.20"
     },
     "license": "MIT",
     "autoload": {
