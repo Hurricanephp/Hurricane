@@ -1,4 +1,4 @@
-### Hurricane: Asynchronous PHP framework.
+### 🌀Hurricane: A minimalist PHP framework.
 
 ### Install
 ```bash
