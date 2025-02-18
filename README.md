@@ -1,5 +1,5 @@
 ### 🌀Hurricane
-A minimalist PHP framework. created by @CodeWithSushil and @AshishKumbhar01.
+A minimalist PHP framework. created by [@CodeWithSushil](https://github.com/CodeWithSushil) and [@AshishKumbhar01](https://github.com/Ashishkumbhar01).
 
 ### Install
 ```bash
