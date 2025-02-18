@@ -1,6 +1,6 @@
 {
     "name": "hurricanephp/hurricane",
-    "description": "Hurricane: Asynchronous PHP framework.",
+    "description": "Hurricane: A minimalist PHP framework.",
     "type": "project",
     "keywords": ["hurricane","framework","Asynchronous","async"],
     "require": {
@@ -35,6 +35,9 @@
         {
             "name": "Sushil Kumar",
             "email": "sushilkumbhar77@gmail.com"
+        },
+        {
+            "name": "Ashish Kumbhar"
         }
     ],
     "scripts": {
