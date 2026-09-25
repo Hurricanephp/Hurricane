@@ -1,0 +1,29 @@
+{
+    "name": "hurricane/framework",
+    "description": "Hurricane framework.",
+    "keywords": [
+        "hurricane",
+        "framework"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hurricane\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
