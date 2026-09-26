@@ -31,6 +31,9 @@
             }
         }
     ],
+    "bin": [
+        "bin/hurricane"
+    ],
     "authors": [
         {
             "name": "Sushil Kumar",
