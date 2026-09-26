@@ -1,6 +1,6 @@
 {
     "name": "hurricanephp/hurricane",
-    "description": "Hurricane is an asynchronous framework for php",
+    "description": "Hurricane 🌀: A modular, async-first PHP framework with native reactive UI and enterprise-grade performance.",
     "keywords": [
         "hurricanephp",
         "asynchronous",
