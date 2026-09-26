@@ -1,28 +1,19 @@
-{                                                     "name": "hurricane/http",
-    "description": "Hurricane framework.",
-    "keywords": [
-        "hurricane",
-        "framework"
-    ],
+{
+    "name": "hurricanephp/http",
+    "description": "HTTP request, response and server components for Hurricane.",
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^8.3"
+        "php": "^8.4"
     },
     "autoload": {
         "psr-4": {
             "Hurricane\\Http\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Sushil Kumar",
-            "email": "sushilkumbhar77@gmail.com"
+    "autoload-dev": {
+        "psr-4": {
+            "Hurricane\\Http\\Tests\\": "tests/"
         }
-    ],
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

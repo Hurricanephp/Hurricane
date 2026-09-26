@@ -1,29 +1,16 @@
 {
     "name": "hurricanephp/framework",
-    "description": "Hurricane framework.",
-    "keywords": [
-        "hurricane",
-        "framework"
-    ],
+    "description": "The Hurricane PHP framework.",
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^8.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "Hurricane\\Framework\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Sushil Kumar",
-            "email": "sushilkumbhar77@gmail.com"
-        }
-    ],
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+        "php": "^8.4",
+        "hurricanephp/core": "self.version",
+        "hurricanephp/http": "self.version",
+        "hurricanephp/routing": "self.version",
+        "hurricanephp/middleware": "self.version",
+        "hurricanephp/async": "self.version",
+        "hurricanephp/event-loop": "self.version",
+        "hurricanephp/promises": "self.version"
+    }
 }

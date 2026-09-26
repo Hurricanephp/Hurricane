@@ -60,6 +60,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "framework",
+            "options": {
+                "symlink": true
+            }
         }
     ],
 
