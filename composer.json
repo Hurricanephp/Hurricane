@@ -1,6 +1,15 @@
 {
-    "name": "hurricane/hurricane",
-    "description": "Hurricane",
+    "name": "hurricanephp/hurricane",
+    "description": "Hurricane is an asynchronous framework for php",
+    "keywords": [
+        "hurricanephp",
+        "asynchronous",
+        "framework",
+        "hurricane",
+        "async",
+        "event-loop",
+        "promises"
+    ],
     "type": "project",
     "license": "MIT",
     "require": {
