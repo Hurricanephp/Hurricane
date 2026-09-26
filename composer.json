@@ -2,26 +2,57 @@
     "name": "hurricanephp/hurricane",
     "description": "Hurricane 🌀: A modular, async-first PHP framework with native reactive UI and enterprise-grade performance.",
     "keywords": [
-        "hurricanephp",
-        "asynchronous",
-        "framework",
         "hurricane",
+        "hurricanephp",
+        "php",
+        "framework",
         "async",
+        "asynchronous",
         "event-loop",
-        "promises"
+        "promises",
+        "fibers",
+        "reactive",
+        "http",
+        "websocket",
+        "sse",
+        "api",
+        "micro-framework"
     ],
+    "support": {
+        "issues": "https://github.com/hurricanephp/hurricane/issues",
+        "source": "https://github.com/hurricanephp/hurricane"
+    },
+
     "type": "project",
     "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com",
+            "homepage": "https://codewithsushil.github.io"
+        }
+    ],
+
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/CodeWithSushil"
+        }
+    ],
+
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "vlucas/phpdotenv": "^5.7"
     },
-    "require-dev":{
+
+    "require-dev": {
         "laravel/pint": "^1.32",
         "pestphp/pest": "^5.2",
         "phpstan/phpstan": "^2.2",
         "symfony/var-dumper": "^8.1"
     },
+
     "repositories": [
         {
             "type": "path",
@@ -31,22 +62,106 @@
             }
         }
     ],
+
     "bin": [
         "bin/hurricane"
     ],
-    "authors": [
-        {
-            "name": "Sushil Kumar",
-            "email": "sushilkumbhar77@gmail.com"
+
+    "autoload": {
+        "psr-4": {
+            "Hurricane\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Hurricane\\Tests\\": "tests/"
         }
-    ],
+    },
+
+    "extra": {
+        "hurricane": {
+            "modules": [
+                "core",
+                "http",
+                "routing",
+                "middleware",
+                "async",
+                "event-loop",
+                "promises",
+                "fibers",
+                "views",
+                "reactive",
+                "validation",
+                "database",
+                "cache",
+                "security",
+                "console",
+                "events",
+                "queue"
+            ]
+        },
+
+        "branch-alias": {
+            "dev-main": "0.0.x-dev"
+        },
+
+        "pest": {
+            "plugins": [
+                "pestphp/pest-plugin"
+            ]
+        }
+    },
+
+    "suggest": {
+        "monolog/monolog": "Provides a production-ready PSR-3 logger.",
+        "symfony/console": "Provides advanced CLI tooling.",
+        "nyholm/psr7": "Provides a PSR-7 HTTP message implementation.",
+        "guzzlehttp/psr7": "Provides a PSR-7 HTTP message implementation.",
+        "psr/http-message": "Provides PSR-7 HTTP message interfaces.",
+        "psr/http-factory": "Provides PSR-17 HTTP message factory interfaces.",
+        "psr/container": "Provides PSR-11 dependency-container interfaces.",
+        "ext-sockets": "Provides native socket support for async networking and WebSockets.",
+        "ext-pcntl": "Provides process and signal handling on supported platforms.",
+        "ext-posix": "Provides POSIX process and system functionality.",
+        "ext-openssl": "Provides TLS and cryptographic functionality.",
+        "ext-mbstring": "Provides multibyte string support.",
+        "ext-json": "Provides JSON encoding and decoding."
+    },
+
+    "replace": {
+        "hurricanephp/core": "self.version"
+    },
+
     "config": {
         "sort-packages": true,
-        "preferred-install": "dist",
+        "preferred-install": {
+            "*": "dist"
+        },
         "optimize-autoloader": true,
+        "classmap-authoritative": false,
         "allow-plugins": {
             "pestphp/pest-plugin": true
+        },
+        "platform": {
+            "php": "8.4.1"
         }
+    },
+
+    "scripts": {
+        "test": "@php ./vendor/bin/pest",
+        "test:coverage": "@php ./vendor/bin/pest --coverage",
+        "analyse": "@php ./vendor/bin/phpstan analyse",
+        "lint": "@php ./vendor/bin/pint",
+        "lint:check": "@php ./vendor/bin/pint --test",
+        "check": [
+            "@lint:check",
+            "@analyse",
+            "@test"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true
